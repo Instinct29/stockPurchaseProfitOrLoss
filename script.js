@@ -13,26 +13,31 @@ function stockHandler(){
 }
 function calculateProfitLoss(initial,quantity,current){
     //profitCase
-    if(initial<current){
-        var profit = (current - initial)*quantity ; 
-        var profitPercentage = (profit/current)*100;
-        
-        return `yaya you got a profit 😀🤑✨ from these stocks and the total profit is  ${profit} , and profit percentage is ${profitPercentage}%`
-        
-    }
-    else{
-        if(initial>current){
-            var loss = ( initial - current)*quantity;
-            var lossPercentage = (loss/current)*100;
-            return `Hard luck you got a loss 😢😟 from these stocks and the total loss is  ${loss} , and profit percentage is ${lossPercentage}%`
+    if(initial > 0 && quantity > 0 && current > 0){
+        if(initial<current){
+            var profit = (current - initial)*quantity ; 
+            var profitPercentage = (profit/current)*100;
+            
+            return `yaya you got a profit 😀🤑✨ from these stocks and the total profit is  ${profit} , and profit percentage is ${profitPercentage}%`
             
         }
         else{
-            return "NEUTRAL , NO PAIN NO GAIN AND NO GAIN NO PAIN! 🐻👻"
-            
-
+            if(initial>current){
+                var loss = ( initial - current)*quantity;
+                var lossPercentage = (loss/current)*100;
+                return `Hard luck you got a loss 😢😟 from these stocks and the total loss is  ${loss} , and profit percentage is ${lossPercentage}%`
+                
+            }
+            else{
+                return "NEUTRAL , NO PAIN NO GAIN AND NO GAIN NO PAIN! 🐻👻"
+                
+    
+            }
         }
+    }else{
+        return "Invalid Inputs"
     }
+   
 
 }
 

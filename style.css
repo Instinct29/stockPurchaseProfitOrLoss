@@ -1,7 +1,56 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap');
+
+body {
     text-align: center;
+    font-family: 'Cookie', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 3rem;
+    margin: 2rem;
 }
-label{
+input{
+    font-family: 'Dancing Script', cursive;
+    font-size: larger;
+    width: 5rem;
+    border-color: #4C1D95;
+    border: 3px solid #4C1D95;
+}
+button{
+    font-family: 'Cookie', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+    
+}
+#output{
+    font-family: 'Cookie', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #171717;
+    
+}
+
+label {
     display: block;
     padding-bottom: 1rem;
+    font-size: larger;
+    font-weight: bolder;
 }
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4C1D95;
+    transition-duration: 1s;
+  }
+  
+  .button1:hover {
+    background-color: #4C1D95;
+    color: white;
+  }
